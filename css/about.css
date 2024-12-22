@@ -38,6 +38,7 @@ p {
     box-shadow: rgba(0, 0, 0, 0.295) 0px 2px 8px;
     font-weight: 450;
     font-size: 20px;
+    text-align: center;
 }
 
 .button:hover {
@@ -45,6 +46,7 @@ p {
 }
 
 /* -----ABOUT----- */
+
 #about {
     background-color: var(--clr-orange);
     display: flex;
@@ -90,4 +92,45 @@ p {
     padding: 5px 0;
 }
 
+@media only screen and (max-width: 1300px) {
+    #about {
+        padding-bottom: 3em;
+    }
+}
 
+@media only screen and (max-width: 900px) {
+    #about-parrafo {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        flex-direction: column;
+    }
+    #about #about-img {
+        width: 90%;
+        left: 0;
+    }
+    #about #about-txt {
+        width: 100%;
+    }
+    #about #about-txt > div {
+        width: 80%;
+    }
+    #about h1 {
+        padding-top: 1em;
+        font-size: 34px;
+    }
+    #about h2 {
+        text-align: right;
+        padding-left: 0em;
+    }
+    #about-parrafo {
+        width: 85%;
+        padding: 1em 0;
+    }
+    #about {
+        padding-bottom: 3em;
+    }
+}
