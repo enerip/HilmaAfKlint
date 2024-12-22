@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-orange: #FB7134;
+    --clr-black: #070707;
+    --clr-grey: #A6A698;
+    --clr-beish: #EBEBD9;
+    --font-details: "La Belle Aurore", serif;
+    --font-main: "Manrope", serif;
+    --buttons-corner: 4px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
+}
