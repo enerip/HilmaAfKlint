@@ -71,6 +71,16 @@ p {
     justify-content: center;
 }
 
+#about #about-parrafo a {
+    color: var(--clr-beish);
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--clr-grey);
+    --bs-tooltip-color: white;
+    --bs-tooltip-opacity: 1;
+  }
+
 #about h2 {
     font-family: var(--font-details) !important;
     padding-left: 5em;
