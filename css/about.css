@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-orange: #FB7134;
+    --clr-black: #070707;
+    --clr-grey: #A6A698;
+    --clr-beish: #EBEBD9;
+    --font-details: "La Belle Aurore", serif;
+    --font-main: "Manrope", serif;
+    --buttons-corner: 3px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: var(--font-main);
+    margin: 0;
+}
+
+.button {
+    border-radius: var(--buttons-corner);
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-beish);
+    color: var(--clr-black);
+    padding: 0.2em 1.2em;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.295) 0px 2px 8px;
+    font-weight: 450;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #bebeb0;
+}
+
+/* -----ABOUT----- */
+#about {
+    background-color: var(--clr-orange);
+    display: flex;
+    flex-direction: row;
+}
+
+#about #about-img {
+    width: 40%;
+}
+
+#about #about-img img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about #about-txt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about h2 {
+    font-family: var(--font-details) !important;
+    padding-left: 5em;
+}
+#about h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+#about-parrafo {
+    width: 60%;
+    padding: 2em 0;
+}
+
+#about #about-txt p {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    padding: 5px 0;
+}
+
+
