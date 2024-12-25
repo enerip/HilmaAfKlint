@@ -28,15 +28,53 @@
 <body>
 
       <!-- Use it like any other HTML element -->
-      <main>
-        <div>
+      <header>
+        <div class="header-content">
             <model-viewer src="assets/escena enteracomp3.glb" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
     
         </div>
-    </main>
+    </header>
 
-
-
+    <main>
+    <ul>
+        <li class="c-featured-links_item" data-featured-links="item" data-hover-shuffle="children">
+            <div class="c-featured-links_title">
+                <span onmouseover="showImage()" onmouseout="hideImage()" style="color: white;">Primeras Obras</span>
+                <!-- Imagen al final de la frase -->
+                <div class="c-image c-featured-links_visual -cover -loaded" style="display: inline-block;">
+                    <span class="c-image_inner">
+                        <img class="c-image_img -loaded" alt="Descripción de la imagen" height="50px" width="100px" src="assets/navidunch.jpg" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="c-featured-links_item" data-featured-links="item" data-hover-shuffle="children">
+            <div class="c-featured-links_title">
+                <span onmouseover="showImage()" onmouseout="hideImage()" style="color: white;">Primeras Obras</span>
+                <!-- Imagen al final de la frase -->
+                <div class="c-image c-featured-links_visual -cover -loaded" style="display: inline-block;">
+                    <span class="c-image_inner">
+                        <img class="c-image_img -loaded" alt="Descripción de la imagen" height="50px" width="100px" src="assets/navidunch.jpg" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="c-featured-links_item" data-featured-links="item" data-hover-shuffle="children">
+            <div class="c-featured-links_title">
+                <span onmouseover="showImage()" onmouseout="hideImage()" style="color: white;">Primeras Obras</span>
+                <!-- Imagen al final de la frase -->
+                <div class="c-image c-featured-links_visual -cover -loaded" style="display: inline-block;">
+                    <span class="c-image_inner">
+                        <img class="c-image_img -loaded" alt="Descripción de la imagen" height="50px" width="100px" src="assets/navidunch.jpg" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</main>
+    
+    
+    
     <!-- Import the component -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <!-- FLICKITY JS -->
