@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-orange: #FB7134;
+    --clr-black: #070707;
+    --clr-grey: #A6A698;
+    --clr-beish: #EBEBD9;
+    --font-details: "La Belle Aurore", serif;
+    --font-main: "Manrope", serif;
+    --buttons-corner: 4px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: var(--font-main);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+body {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
+}
+
+    /* HEADER */
+header {
+        display: flex;
+        justify-content: flex-start;
+        background-image: url(../media/img/COVER.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        align-items: flex-end;
+        align-content: center;
+}
+
+.title {
+    padding-left: 2em;
+}
+
+h1 {
+    font-size: 4rem !important;
+}
+
+    /* INTRO */
+
+#intro {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.textintro {
+    align-self: center;
+    padding-bottom: 0 !important;
+}
+
+
+
+.año {
+    font-size: 14vh;
+}
+
+
+.childhood {
+    background-color: var(--clr-orange);
+    padding: 2em;
+    padding-right: 4em;
+    width: 65%;
+    margin-bottom: 50vh;
+
+}
+
+
+.youth {
+    background-color: var(--clr-beish);
+    padding: 2em;
+    padding-right: 4em;
+    justify-content: end;
+    width: 65%;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4em;
+    
+}
+.quote > p {
+    font-size: 2em;
+    width: 70%;
+    
+}
+
+.detalleletra {
+    font-family: "La Belle Aurore", serif;
+    font-size: 2em;
+    line-height: 0.5 !important;
+}
+
+
+.adulthood {
+    background-color: var(--clr-beish);
+    padding: 2em;
+    /* padding-right: 8em; */
+    align-items: end;
+    width: 80%;
+    margin-bottom: 4em;
+}
+
+.old {
+    background-color: var(--clr-orange);
+    padding: 2em;
+    padding-right: 4em;
+    justify-content: end;
+    width: 65%;
+}
+
+
+.responsive {
+    display: flex;
+    height: 50vh;
+  }
