@@ -50,6 +50,7 @@ header {
         height: 50vh;
         align-items: flex-end;
         align-content: center;
+        overflow: hidden;
 }
 
 .title {
@@ -72,6 +73,7 @@ h1 {
 .textintro {
     align-self: center;
     padding-bottom: 0 !important;
+    font-size: 1.2em;
 }
 
 
@@ -81,9 +83,18 @@ h1 {
 }
 
 
+#paintings
+p {
+    font-size: 2em;
+}
+
+
+
+
 .childhood {
     background-color: var(--clr-orange);
     padding: 2em;
+    padding-left: 6em;
     padding-right: 4em;
     width: 65%;
     margin-bottom: 50vh;
@@ -94,29 +105,32 @@ h1 {
 .youth {
     background-color: var(--clr-beish);
     padding: 2em;
-    padding-right: 4em;
-    justify-content: end;
+    padding-left: 4em;
+    justify-content: center;
     width: 65%;
 }
 
-.quote {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 4em;
-    
-}
-.quote > p {
-    font-size: 2em;
-    width: 70%;
-    
-}
+/* QUOTE HILMA */
 
-.detalleletra {
-    font-family: "La Belle Aurore", serif;
-    font-size: 2em;
-    line-height: 0.5 !important;
-}
+    .quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 4em;
+        
+    }
+    .quote > p {
+        font-size: 2em;
+        width: 60%;
+        
+    }
+
+    .detalleletra {
+        font-family: "La Belle Aurore", serif;
+        font-size: 2em;
+        line-height: 0.5 !important;
+    }
+
 
 
 .adulthood {
@@ -141,3 +155,26 @@ h1 {
     display: flex;
     height: 50vh;
   }
+
+
+
+  .nombreobra {
+    font-family: var(--font-details);
+    font-size: 1.5em;
+    padding-top: 1vh;
+  }
+
+  .negro {
+    color: var(--clr-black);
+  }
+
+
+  /* RESPONSIVE */
+
+@media screen and (max-width: 780px) { 
+
+    .welcome {
+        font-size: 60pt;
+    }
+
+}
