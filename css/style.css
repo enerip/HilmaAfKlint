@@ -1,16 +1,60 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
-    margin: 0; 
-    min-height: 1000px;
-}
-/* PERSONALIZACION MENU */
+/* -----ESTILOS----- */
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-orange: #FB7134;
+    --clr-black: #070707;
+    --clr-grey: #A6A698;
+    --clr-beish: #EBEBD9;
+    --font-details: "La Belle Aurore", serif;
+    --font-main: "Manrope", serif;
+    --buttons-corner: 4px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--clr-black);
+}
+
+ h2 {
+    font-family: var(--font-details) !important;
+    padding-left: 5em;
+    text-align: center;
+}
+ h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+
+ p {
+    text-align: center;
+    font-size: 13px;
+    color: var(--clr-beish)
+}
+
+/* -----MENU----- */
+
+.container-fluid{
+width: 100% !important;
+}
 .nav-link {
     color: var(--clr-beish);
   }
@@ -19,6 +63,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 998;}
+
+  /* -----3DVIEWER----- */
   
 header {
     width: 100%;
@@ -53,7 +99,10 @@ model-viewer {
 }
 
 
-
+/* -----LISTA----- */
+main ul{
+    padding: 0;
+}
 
 .clasificacion {
     height: 50px; 
@@ -74,7 +123,7 @@ model-viewer {
 
 
 .clasificacion::before {
-    height: 2px; 
+    height: 1px; 
     top: 0; 
     left: 50%; 
     transform: translateX(-50%); 
@@ -82,20 +131,32 @@ model-viewer {
 
 
 .clasificacion::after {
-    height: 1px; 
-    bottom: 0; 
-    left: 50%; 
+    height: 0,5px; 
     transform: translateX(-50%);
     color: white;
+    top: 0; 
+    left: 50%; 
+}
+
+main ul li:first-child::before {
+    content: '';
+    position: absolute;
+    width: 90vw;
+    height: 1px;
+    background-color: #ffffff;
+    top: 0; 
+    left: 50%; 
+
+ 
 }
 
 main ul li:last-child::after {
     content: '';
     position: absolute;
     width: 90vw;
-    height: 3px;
+    height: 1px;
     background-color: #ffffff;
-    bottom: 0;
+    top: 0; 
     left: 50%; 
  
 }
@@ -135,3 +196,138 @@ main ul li:last-child::after {
     object-fit: cover;
 }
 
+/* -----FOOTER----- */
+
+footer {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
+}
+
+.terms p,
+.nl-text p,
+#sm p {
+    font-size: 0.9em;
+}
+
+.terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nl-text p:first-child {
+    font-weight: 600;
+}
+
+.nl-text {
+    color: var(--clr-beish);
+}
+
+.nl-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 80%; 
+    width: 1px;
+    background-color: var(--clr-beish);
+}
+
+.nl {
+    border: 1px solid var(--clr-beish); 
+    border-radius: 4px;
+    padding-right: 0.5em;
+}
+
+.form-nl {
+    background-color: transparent;
+    border: none;
+    padding: 5px; 
+    outline: none; 
+    color: var(--clr-beish) !important;
+}
+
+.form-nl::placeholder {
+    color: var(--clr-beish);
+    opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
+}
+
+.form-nl:focus {
+    background-color: transparent;
+    font-family: var(--font-body);
+    color: var(--clr-beish-2);
+}
+
+.iconsSM i:hover {
+    cursor: pointer;
+    color: var(--clr-accent) !important;
+}
+
+
+/* -----MEDIA QUERIES----- */
+
+@media only screen and (max-width: 1300px) {
+    header {
+        width: 100%;
+        height: 100vh; 
+        position: relative;
+        overflow: hidden; 
+        z-index: 10;
+    }
+    .header-content {
+        position: absolute;
+        top: -10vh;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
+
+        model-viewer {
+            width: 100vw;  
+            height: 120vh; 
+            object-fit: cover;  
+            position: absolute; 
+        }
+ 
+}
+
+@media only screen and (max-width: 900px) {
+  
+    header {
+        width: 100%;
+        height: 65vh; 
+        position: relative;
+        overflow: hidden; 
+        z-index: 10;
+    }
+    .header-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
+
+        model-viewer {
+            width: 100vw;  
+            height: 120vh; 
+            object-fit: cover;  
+            position: absolute; 
+        }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
