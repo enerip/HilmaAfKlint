@@ -20,7 +20,6 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/menu.css">
 
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -35,19 +34,46 @@
 
 </head>
 <body>
-    <!-- AÑADIR MENU!!! -->
+    <!-- MENU -->
 
-    
-    <header>
-        <div class="title">
-            <h1 >Los diez mayores</h1></div>
-        
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #A6A698;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../home/index.html">
+            <img src="media/img/logoblanco.png" alt="" width="70" height="64">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+      
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <header class="bg-video-header">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="media/video//HILMA10VIDEO.mp4" type="video/mp4">
+            </video>
+            <div class="h-100 d-flex justify-content-start align-items-end overlay">
+                <div class="text-center">
+                    <h1 class="title">Los diez mayores</h1> 
+                  </div>
+                  </div>
+          </header>
 
     <section id="intro">
-
-        
-        <div class="container-lg">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 textintro">
                     <p>Hilma af Klint creó <strong>Los diez mayores</strong> tras recibir una revelación de sus guías espirituales. Quienes le encargaron plasmar en “diez cuadros de etapas pasadas” las cuatro etapas de la vida. Estos cuadros, parte de la “Pinturas para el templo”, los realizó con la ayuda de sus compañeros Cornelia Cederberg y Gusten Andersson.</p> 
@@ -59,10 +85,10 @@
         </div>
     </section>
 
-
 <section id="paintings">
 
     <!-- CHILDHOOD -->
+
      <div class="row childhood position-relative">
             <div class="col-md-7 align-self-end">
                 <img src="/media/img/10MAYORES1.jpg" alt="">
@@ -73,8 +99,10 @@
                 <p class="nombreobra">n° 2 Niñez</p>
             </div>
     </div>
+</div>
 
     <!-- YOUTH -->
+<div class="container-fluid">
     <div class="row youth position-relative ms-auto">
         <div class="position-absolute top-50 start-0 translate-middle" style="max-width:45%;">
             <img src="/media/img/10MAYORES3.jpg" alt="">
@@ -85,6 +113,7 @@
             <p class="nombreobra negro">n° 4 Juventud</p>
         </div>
     </div>
+</div>
 
     <!-- QUOTE -->
     <div class="quote">
@@ -92,6 +121,7 @@
     </div>
 
     <!-- ADULTHOOD -->
+<div class="container-fluid">
     <div class="row adulthood position-relative ">
         <div class="col-md-5">
             <img src="/media/img/10MAYORES5.jpg" alt="">
@@ -113,17 +143,12 @@
             <p class="nombreobra negro">n° 7 Madurez</p>
         </div>
     </div>
+</div>
 
-    <!-- CARRUSEL -->
 
-    <!-- <div class="responsive">
-        <div> <img src="/media/img/FCW.png" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/FCW.png" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/10MAYORES1.jpg" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/10MAYORES1.jpg" alt="" class="img-fluid"> </div>
-      </div> -->
 
     <!-- OLD AGE -->
+    <div class="container-fluid">
     <div class="row old position-relative ms-auto">
         <div class="position-absolute top-50 start-0 translate-middle" style="max-width:45%;">
             <img src="/media/img/10MAYORES9.jpg" alt="">
@@ -134,15 +159,46 @@
             <p class="nombreobra negro">n° 10 Ancianidad</p>
         </div>
     </div>
-
+</div>
+    
+<!-- CARRUSEL -->
+    <div class="responsive">
+        <div> <img src="/media/img/CARRUSEL1.webp" alt="" class="img-fluid"> </div>
+        <div> <img src="/media/img/CARRUSEL2.webp" alt="" class="img-fluid"> </div>
+        <div> <img src="/media/img/CARRUSEL3.webp" alt="" class="img-fluid"> </div>
+        <div> <img src="/media/img/CARRUSEL4.webp" alt="" class="img-fluid"> </div>
+      </div>
 
 </section>
 
-
-
-
-
-
+<footer class="d-flex flex-column align-items-center p-5">
+    <div class="container w-100 w-xl-75">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-8 terms py-4 px-0">
+          <p class="mb-2">TÉRMINOS Y CONDICIONES</p>
+          <p class="mb-2">POLÍTICA DE PRIVACIDAD</p>
+          <p class="mb-2">LEGAL</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 nl-text p-4 d-flex flex-column position-relative">
+          <p class="mb-4">APRENDE SOBRE ESTA ARTISTA DESCONOCIDA</p>
+          <p class="mb-4">¿Quieres estar al día con todo lo relacionado a Hilma Af Klint?</p>
+          <div class="nl d-flex flex-row">
+            <input type="email" class="form-control form-nl" placeholder="Suscríbete a nuestra newsletter">
+            <i class="bi bi-envelope" style="font-size: 1.5rem; color: var(--clr-beish);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sm" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="iconsSM">
+        <i class="bi bi-facebook" style="font-size: 1.5rem; margin: 0.2em;"></i>
+        <i class="bi bi-twitter-x" style="font-size: 1.5rem; margin: 0.2em;"></i>
+        <i class="bi bi-instagram" style="font-size: 1.5rem; margin: 0.2em;"></i>
+        <i class="bi bi-tiktok" style="font-size: 1.5rem; margin: 0.2em;"></i>
+      </div>
+      <p class="my-3">© 2024 Hilma Af Klint by María Sastre, Antonio Sánchez & Irene Pando</p>
+    </div>
+  </footer>
 
 <!-- FLICKITY JS -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -150,13 +206,11 @@
 <!-- JAVASCRIPT BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<!-- SLICK -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
 <!-- CUSTOM JS -->
 <script src="js/script.js"></script>
-
-   <!-- SLICK -->
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script type="text/javascript" src="slick/slick.min.js"></script>
 
 
 </body>

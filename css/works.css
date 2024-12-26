@@ -38,8 +38,47 @@ body {
     color: var(--clr-beish);
 }
 
+
+.nav-link {
+    color: var(--clr-beish);
+  }
+  
+  .sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 998;}
+
+
+  .bg-video-header {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow-x: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: brightness(0.7);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
     /* HEADER */
-header {
+/* header {
         display: flex;
         justify-content: flex-start;
         background-image: url(../media/img/COVER.jpg);
@@ -50,12 +89,9 @@ header {
         height: 50vh;
         align-items: flex-end;
         align-content: center;
-        overflow: hidden;
-}
+} */
 
-.title {
-    padding-left: 2em;
-}
+
 
 h1 {
     font-size: 4rem !important;
@@ -67,16 +103,18 @@ h1 {
     height: 30vh;
     display: flex;
     align-items: center;
-    padding-left: 2em;
 }
 
 .textintro {
     align-self: center;
     padding-bottom: 0 !important;
     font-size: 1.2em;
+    padding-left: 5em;
 }
 
-
+.title {
+    padding-left: 1.5em;
+}
 
 .año {
     font-size: 14vh;
@@ -136,7 +174,7 @@ p {
 .adulthood {
     background-color: var(--clr-beish);
     padding: 2em;
-    /* padding-right: 8em; */
+    padding-left: 6em;
     align-items: end;
     width: 80%;
     margin-bottom: 4em;
@@ -152,11 +190,10 @@ p {
 
 
 .responsive {
-    display: flex;
-    height: 50vh;
+    overflow: hidden;
+    height: 50vh !important;
+    margin-top: 5em;
   }
-
-
 
   .nombreobra {
     font-family: var(--font-details);
@@ -167,6 +204,76 @@ p {
   .negro {
     color: var(--clr-black);
   }
+
+
+/* -----FOOTER----- */
+footer {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
+}
+
+.terms p,
+.nl-text p,
+#sm p {
+    font-size: 0.9em;
+}
+
+.terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nl-text p:first-child {
+    font-weight: 600;
+}
+
+.nl-text {
+    color: var(--clr-beish);
+}
+
+.nl-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 80%; 
+    width: 1px;
+    background-color: var(--clr-beish);
+}
+
+.nl {
+    border: 1px solid var(--clr-beish); 
+    border-radius: 4px;
+    padding-right: 0.5em;
+}
+
+.form-nl {
+    background-color: transparent;
+    border: none;
+    padding: 5px; 
+    outline: none; 
+    color: var(--clr-beish) !important;
+}
+
+.form-nl::placeholder {
+    color: var(--clr-beish);
+    opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
+}
+
+.form-nl:focus {
+    background-color: transparent;
+    font-family: var(--font-body);
+    color: var(--clr-beish-2);
+}
+
+.iconsSM i:hover {
+    cursor: pointer;
+    color: var(--clr-accent) !important;
+}
+
+
+
 
 
   /* RESPONSIVE */

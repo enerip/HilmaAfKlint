@@ -4,9 +4,9 @@ $('.responsive').slick({
   arrows: false,
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 200,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
