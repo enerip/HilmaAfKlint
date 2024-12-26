@@ -7,7 +7,19 @@ body {
     flex-direction: column;
     background-color: black;
     margin: 0; 
+    min-height: 1000px;
 }
+/* PERSONALIZACION MENU */
+
+.nav-link {
+    color: var(--clr-beish);
+  }
+  
+  .sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 998;}
+  
 header {
     width: 100%;
     height: 1200px; 
@@ -37,13 +49,59 @@ model-viewer {
     width: 100vw;  
     height: 120vh; 
     object-fit: cover;  
-    position: absolute;
-    top: -10vh; 
-    left: 0;
+    position: absolute; 
 }
 
 
-.c-featured-links_title {
+
+
+.clasificacion {
+    height: 50px; 
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 0; 
+}
+
+
+.clasificacion::before, .clasificacion::after {
+    content: '';
+    position: absolute;
+    width: 90vw;
+    background-color: #ffffff; 
+}
+
+
+.clasificacion::before {
+    height: 2px; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+.clasificacion::after {
+    height: 1px; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white;
+}
+
+main ul li:last-child::after {
+    content: '';
+    position: absolute;
+    width: 90vw;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 50%; 
+ 
+}
+
+
+.titulo {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -52,69 +110,28 @@ model-viewer {
 }
 
 
-.c-featured-links_title span {
+.titulo span {
     color: white;
     font-size: 24px;
 }
 
-/* Diseño del <li> */
 
-.c-featured-links_item {
-    height: 50px; /* Altura del item */
-    position: relative; /* Necesario para el borde */
-    display: flex; /* Usamos flexbox para alinear el texto */
-    align-items: center; /* Alineamos verticalmente el contenido */
-    justify-content: center; /* Alineamos horizontalmente el texto */
-    padding: 40px 0; /* Espacio superior e inferior */
+.image {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
 }
 
-
-.c-featured-links_item::before, .c-featured-links_item::after {
-    content: '';
-    position: absolute;
-    width: 90vw; /* Ajusta el tamaño de las líneas (puedes cambiar este valor para hacerlo más o menos ancho) */
-    background-color: #333; /* Color de las líneas */
+.titulo:hover .image {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
-
-.c-featured-links_item::before {
-    height: 2px; /* Ajusta el grosor de la línea */
-    top: 0; /* Colocamos la línea en la parte superior */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Centrado perfecto */
+.image img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
 }
 
-
-.c-featured-links_item::after {
-    height: 1px; /* Ajusta el grosor de la línea */
-    bottom: 0; /* Colocamos la línea en la parte inferior */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Centrado perfecto */
-}
-
-.c-featured-links_title {
-    display: flex;
-    justify-content: center; /* Centra el texto horizontalmente */
-    position: relative; /* Asegura que el texto esté sobre el modelo */
-}
-
-.c-featured-links_title span {
-    color: white;
-    font-size: 24px; /* Tamaño del texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
-}
-
-.c-image {
-    transition: opacity 0.3s ease-in-out; /* Transición suave */
-    margin-left: 10px; /* Espacio entre el texto y la imagen */
-    opacity: 0; /* Imagen inicialmente invisible */
-}
-.c-image img{
-    width: 15%;
-    height: 15%;
-    object-fit: contain;
-}
-
-.c-featured-links_item:hover .c-image {
-    opacity: 1; 
-}
