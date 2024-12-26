@@ -144,3 +144,69 @@ p {
         padding-bottom: 3em;
     }
 }
+
+/* -----FOOTER----- */
+footer {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
+}
+
+.terms p,
+.nl-text p,
+#sm p {
+    font-size: 0.9em;
+}
+
+.terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nl-text p:first-child {
+    font-weight: 600;
+}
+
+.nl-text {
+    color: var(--clr-beish);
+}
+
+.nl-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 80%; 
+    width: 1px;
+    background-color: var(--clr-beish);
+}
+
+.nl {
+    border: 1px solid var(--clr-beish); 
+    border-radius: 4px;
+    padding-right: 0.5em;
+}
+
+.form-nl {
+    background-color: transparent;
+    border: none;
+    padding: 5px; 
+    outline: none; 
+    color: var(--clr-beish) !important;
+}
+
+.form-nl::placeholder {
+    color: var(--clr-beish);
+    opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
+}
+
+.form-nl:focus {
+    background-color: transparent;
+    font-family: var(--font-body);
+    color: var(--clr-beish-2);
+}
+
+.iconsSM i:hover {
+    cursor: pointer;
+    color: var(--clr-accent) !important;
+}
