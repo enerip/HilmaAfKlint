@@ -20,22 +20,19 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/locomotive.css">
 
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- FLICKITY CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
     <!-- SLICK -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-
 </head>
-<body>
-    <!-- MENU -->
 
+<body>
+
+    <!-- MENU -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #A6A698;">
         <div class="container-fluid">
           <a class="navbar-brand" href="../home/index.html">
@@ -61,22 +58,24 @@
         </div>
       </nav>
 
-        <header class="bg-video-header">
-            <video autoplay loop muted playsinline class="bg-video">
-                <source src="media/video//HILMA10VIDEO.mp4" type="video/mp4">
-            </video>
-            <div class="h-100 d-flex justify-content-start align-items-end overlay">
-                <div class="text-center">
-                    <h1 class="title">Los diez mayores</h1> 
-                  </div>
-                  </div>
-          </header>
+    <!-- HEADER -->
+    <header class="bg-video-header">
+      <video autoplay loop muted playsinline class="bg-video">
+        <source src="media/video//HILMA10VIDEO.mp4" type="video/mp4">
+      </video>
+      <div class="h-100 d-flex justify-content-start align-items-end overlay">
+        <div class="text-center">
+          <h1 class="title">Los diez mayores</h1> 
+        </div>
+      </div>
+    </header>
 
+    <!-- INTRO -->
     <section id="intro">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-8 textintro">
-                    <p>Hilma af Klint creó <strong>Los diez mayores</strong> tras recibir una revelación de sus guías espirituales. Quienes le encargaron plasmar en “diez cuadros de etapas pasadas” las cuatro etapas de la vida. Estos cuadros, parte de la “Pinturas para el templo”, los realizó con la ayuda de sus compañeros Cornelia Cederberg y Gusten Andersson.</p> 
+                    <p>Hilma af Klint creó <strong>Los diez mayores</strong> tras recibir una revelación de sus guías espirituales, quienes le encargaron plasmar en “diez cuadros de belleza paradisíaca” las cuatro etapas de la vida. Estas obras, parte de sus “Pinturas para el templo”, las realizó con la ayuda de sus compañeras Cornelia Cederberg y Gusten Andersson.</p> 
                 </div>
                 <div class="col-lg-4 text-center">
                     <p class="año">1907</p>
@@ -85,92 +84,91 @@
         </div>
     </section>
 
-<section id="paintings">
+  <!-- OBRAS -->
+  <section id="paintings">
 
-    <!-- CHILDHOOD -->
-
-     <div class="row childhood position-relative">
-            <div class="col-md-7 align-self-end">
-                <img src="/media/img/10MAYORES1.jpg" alt="">
-                <p class="nombreobra negro">n° 1 Niñez</p>
-            </div>
-            <div class="position-absolute top-100 start-100 translate-middle" style="max-width:50%;">
-                <img src="/media/img/10MAYORES2.jpg" alt="">
-                <p class="nombreobra">n° 2 Niñez</p>
-            </div>
-    </div>
-</div>
-
-    <!-- YOUTH -->
-<div class="container-fluid">
-    <div class="row youth position-relative ms-auto">
-        <div class="position-absolute top-50 start-0 translate-middle" style="max-width:45%;">
-            <img src="/media/img/10MAYORES3.jpg" alt="">
-            <p class="nombreobra">n° 3 Juventud</p>
+    <!-- NIÑEZ -->
+    <div class="container-fluid">
+      <div class="row childhood position-relative data-scroll">
+        <div class="col-7 align-self-end mayor1">
+          <img src="/media/img/10MAYORES1.jpg" alt="">
+          <p class="nombreobra negro">n° 1 Niñez</p>          
         </div>
-        <div class="col-md-7 align-self-end">
+        <div class="position-absolute top-100 start-100 translate-middle mayor2">
+          <img src="/media/img/10MAYORES2.jpg" alt="">
+          <p class="nombreobra">n° 2 Niñez</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JUVENTUD -->
+    <div class="container-fluid">
+      <div class="row youth position-relative ms-auto">
+        <div class="position-absolute top-50 start-0 translate-middle mayor3">
+            <img src="/media/img/10MAYORES3.jpg" alt="">
+            <p class="nombreobra gris">n° 3 Juventud</p>
+        </div>
+        <div class="col-7 align-self-end mayor4">
             <img src="/media/img/10MAYORES4.jpg" alt="">
             <p class="nombreobra negro">n° 4 Juventud</p>
         </div>
+      </div>
     </div>
-</div>
 
-    <!-- QUOTE -->
+    <!-- CITA -->
     <div class="quote">
- <p class="lh-base">“<span class="detalleletra lh-base">L</span>as imágenes fueron pintadas directamente a través de mí, sin dibujos preliminares, y con gran fuerza.”</p>
+    <p> <span class="detalleletra">L</span>as imágenes fueron pintadas directamente a través de mí, sin dibujos preliminares, y con gran fuerza.”</p>
     </div>
 
-    <!-- ADULTHOOD -->
-<div class="container-fluid">
-    <div class="row adulthood position-relative ">
-        <div class="col-md-5">
+    <!-- MADUREZ -->
+    <div class="container-fluid">
+      <div class="row adulthood position-relative">
+        <div class="col-5 mayor5">
             <img src="/media/img/10MAYORES5.jpg" alt="">
             <p class="nombreobra negro">n° 4 Madurez</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-5 mayor5">
             <img src="/media/img/10MAYORES6.jpg" alt="">
             <p class="nombreobra negro">n° 5 Madurez</p>
         </div>
 
         <div class="w-100"></div>
         
-        <div class="col-md-5">
+        <div class="col-5 mayor5">
             <img src="/media/img/10MAYORES7.jpg" alt="">
             <p class="nombreobra negro">n° 6 Madurez</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-5 mayor5">
             <img src="/media/img/10MAYORES8.jpg" alt="">
             <p class="nombreobra negro">n° 7 Madurez</p>
         </div>
+      </div>
     </div>
-</div>
 
-
-
-    <!-- OLD AGE -->
+    <!-- ANCIANIDAD -->
     <div class="container-fluid">
-    <div class="row old position-relative ms-auto">
-        <div class="position-absolute top-50 start-0 translate-middle" style="max-width:45%;">
+      <div class="row old position-relative ms-auto">
+        <div class="position-absolute top-50 start-0 translate-middle mayor3">
             <img src="/media/img/10MAYORES9.jpg" alt="">
             <p class="nombreobra">n° 9 Ancianidad</p>
         </div>
-        <div class="col-md-7 align-self-end">
+        <div class="col-7 align-self-end mayor4">
             <img src="/media/img/10MAYORES10.jpg" alt="">
             <p class="nombreobra negro">n° 10 Ancianidad</p>
         </div>
-    </div>
-</div>
-    
-<!-- CARRUSEL -->
-    <div class="responsive">
-        <div> <img src="/media/img/CARRUSEL1.webp" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/CARRUSEL2.webp" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/CARRUSEL3.webp" alt="" class="img-fluid"> </div>
-        <div> <img src="/media/img/CARRUSEL4.webp" alt="" class="img-fluid"> </div>
       </div>
-
+    </div>
+    
+    <!-- CARRUSEL -->
+    <div class="responsive">
+      <div> <img src="/media/img/CARRUSEL1.webp" alt="" class="img-fluid"> </div>
+      <div> <img src="/media/img/CARRUSEL2.webp" alt="" class="img-fluid"> </div>
+      <div> <img src="/media/img/CARRUSEL3.webp" alt="" class="img-fluid"> </div>
+      <div> <img src="/media/img/CARRUSEL4.webp" alt="" class="img-fluid"> </div>
+    </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="d-flex flex-column align-items-center p-5">
     <div class="container w-100 w-xl-75">
       <div class="row">
@@ -211,7 +209,6 @@
 
 <!-- CUSTOM JS -->
 <script src="js/script.js"></script>
-
 
 </body>
 </html>

@@ -38,7 +38,7 @@ body {
     color: var(--clr-beish);
 }
 
-
+/* CONFIGURACIÓN MENÚ */
 .nav-link {
     color: var(--clr-beish);
   }
@@ -48,6 +48,7 @@ body {
   top: 0;
   z-index: 998;}
 
+  /* VIDEO HEADER */
 
   .bg-video-header {
     position: relative;
@@ -77,27 +78,11 @@ body {
     z-index: 2;
 }
 
-    /* HEADER */
-/* header {
-        display: flex;
-        justify-content: flex-start;
-        background-image: url(../media/img/COVER.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 50vh;
-        align-items: flex-end;
-        align-content: center;
-} */
-
-
-
 h1 {
     font-size: 4rem !important;
 }
 
-    /* INTRO */
+/* INTRO */
 
 #intro {
     height: 30vh;
@@ -127,8 +112,6 @@ p {
 }
 
 
-
-
 .childhood {
     background-color: var(--clr-orange);
     padding: 2em;
@@ -137,6 +120,15 @@ p {
     width: 65%;
     margin-bottom: 50vh;
 
+}
+
+.mayor2 {
+    max-width: 50%;
+  }
+
+
+.mayor3 {
+    width: 40%;
 }
 
 
@@ -159,8 +151,7 @@ p {
     }
     .quote > p {
         font-size: 2em;
-        width: 60%;
-        
+        width: 65%;
     }
 
     .detalleletra {
@@ -183,15 +174,13 @@ p {
 .old {
     background-color: var(--clr-orange);
     padding: 2em;
-    padding-right: 4em;
-    justify-content: end;
-    width: 65%;
+    padding-left: 4em;
+    justify-content: center;
+    width: 75%;
 }
 
 
 .responsive {
-    overflow: hidden;
-    height: 50vh !important;
     margin-top: 5em;
   }
 
@@ -205,6 +194,9 @@ p {
     color: var(--clr-black);
   }
 
+  .gris {
+    color: var(--clr-grey);
+  }
 
 /* -----FOOTER----- */
 footer {
@@ -278,10 +270,234 @@ footer {
 
   /* RESPONSIVE */
 
-@media screen and (max-width: 780px) { 
+@media screen and (max-width: 1269px) { 
 
-    .welcome {
-        font-size: 60pt;
+    .textintro {
+        font-size: 1em;
+        padding-left: 5.7em;
     }
 
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1.4em !important;
+        padding-top: 1vh;
+
+    }
+
+    .childhood {
+    margin-bottom: 40vh;
+}
+
+}
+
+@media screen and (max-width: 1077px) { 
+
+    .textintro {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 1022px) { 
+
+    .quote > p {
+        font-size: 1.5em !important;
+        width:70%;
+    }
+    
+    .quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 3em;
+        
+    }
+    }
+    
+
+@media screen and (max-width: 991px) { 
+
+    .textintro {
+        font-size: 0.9em;
+        padding: 4em;
+    }
+
+    .año {
+        font-size: 10vh;
+        padding-bottom: 0.5em;
+    }
+
+    .title {
+        padding-left: 1em;
+    }
+
+    h1 {
+        font-size: 3rem !important ;
+    }
+
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        padding-left: 6em;
+        width: 75%;
+        margin-bottom: 35vh;
+    }
+ 
+    .mayor1 {
+        width: 70% ;
+    }
+
+    .youth {
+        background-color: var(--clr-beish);
+        padding: 2em;
+        padding-left: 4em;
+        justify-content: center;
+        width: 75%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        padding-left: 6em;
+        width: 75%;
+        margin-bottom: 35vh;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1.2em !important;
+        padding-top: 1vh;
+    }
+
+    /* .mayor5 {
+        width: 120%;
+    } */
+    .adulthood {
+        padding-left: 2em;
+    }
+
+    .childhood {
+        margin-bottom: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 719px){
+    .quote > p {
+        font-size: 1.2em !important;
+        width:85%;
+    }
+
+    .mayor4 {
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width: 680px) { 
+
+    .textintro {
+        font-size: 0.8em;
+        padding: 3em;
+    }
+
+    .año {
+        font-size: 6vh;
+        padding-top: 0.2em;
+        padding-bottom: 0.5em;
+    }
+
+    .title {
+        padding-left: 1em;
+    }
+
+    h1 {
+        font-size: 2.5rem !important ;
+    }
+     
+    .childhood {
+        margin-bottom: 25vh;
+    }
+
+    .quote > p {
+        font-size: 1em !important;
+        width:85%;
+    }
+
+    .mayor4 {
+        width: 85%;
+    }
+
+    .mayor3 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        width: 75%;
+        margin-bottom: 25vh;
+    }
+
+    .mayor2 {
+        max-width: 60%;
+      }
+    
+      .mayor1 {
+        width:75% ;
+    }
+
+    .adulthood {
+        width: 95%;
+    }
+
+    .mayor5 {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .childhood {
+        margin-bottom: 25vh;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .childhood {
+        margin-bottom: 20vh;
+    }
+
+    .mayor4 {
+        width: 95%;
+    }
+    .mayor3 {
+        width: 55%;
+    }
+
+    .youth {
+        width: 80%;
+    }
+
+    .mayor10 {
+        width: 95%;
+    }
+    .mayor9 {
+        width: 55%;
+    }
 }
