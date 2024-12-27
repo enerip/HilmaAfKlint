@@ -21,7 +21,10 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+    
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -35,7 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #A6A698;">
       <div class="container-fluid">
         <a class="navbar-brand" href="../home/index.html">
-          <img src="media/img/logoblanco.png" alt="" width="70" height="64">
+          <img src="assets/firma-04.webp" alt="" width="70" height="64">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,6 +47,9 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -58,7 +64,7 @@
 
       <header>
         <div class="header-content">
-            <model-viewer src="assets/escena enteracomp3.glb" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
+            <model-viewer src="assets/prueba.glb" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
     
         </div>
     </header>
@@ -69,30 +75,30 @@
     <ul>
         <li class="clasificacion" >
             <div class="titulo">
-                <span  style="color: white;">Los Diez Mayores</span>
+             <p class="base"> <span class="detalle">1.</span>Los Diez Mayores</p>
                 <div class="image" style="display: inline-block;">
                     <span>
-                        <img class="image img" alt="Descripción de la imagen" src="assets/navidunch.jpg" style="display: block;">
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-03.webp" style="display: block;">
                     </span>
                 </div>
             </div>
         </li>
         <li class="clasificacion" >
             <div class="titulo">
-                <span  style="color: white;">Caos primogenio</span>
+              <p><span class="detalle">2.</span>Caos primogenio</p>
                 <div class="image" style="display: inline-block;">
                     <span >
-                        <img class="image img" alt="Descripción de la imagen" src="assets/navidunch2.jpg" style="display: block;">
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-01.webp" style="display: block;">
                     </span>
                 </div>
             </div>
         </li>
         <li class="clasificacion">
             <div class="titulo">
-                <span  style="color: white;">Grandes Pinturas de Figuras</span>
+                <p><span class="detalle">3.</span>Grandes Pinturas de Figuras</p>
                 <div class="image" style="display: inline-block;">
                     <span>
-                        <img class="image img" alt="Descripción de la imagen" src="assets/navidunch3.jpg" style="display: block;">
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-02.webp" style="display: block;">
                     </span>
                 </div>
             </div>
@@ -138,7 +144,9 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <!-- FLICKITY JS -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+<script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
 
 <!-- CUSTOM JS -->
 <script src="js/script.js"></script>

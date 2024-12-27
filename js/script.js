@@ -5,3 +5,7 @@
 //     el: document.querySelector('[data-scroll-container]'),
 //     smooth: true
 // });
+
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
