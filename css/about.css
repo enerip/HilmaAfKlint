@@ -28,6 +28,17 @@ p {
     margin: 0;
 }
 
+/* CONFIGURACIÓN MENÚ */
+.nav-link {
+    color: var(--clr-beish);
+  }
+  
+  .sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 998;}
+
+/* ABOUT */
 .button {
     border-radius: var(--buttons-corner);
     border: 1px solid var(--clr-black);
@@ -88,6 +99,7 @@ p {
 #about h1 {
     font-weight: 700;
     text-align: center;
+    padding-top: 0.8em;
 }
 
 #about-parrafo {
