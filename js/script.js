@@ -1,3 +1,8 @@
+
+$(document).ready(function () {
+  AOS.init();
+});
+
 // CARRUSEL IMAGENES
 
 $('.responsive').slick({
@@ -36,16 +41,20 @@ $('.responsive').slick({
     ]
   });
 
+// ANIMACION CARGA AÑOS
 
+var contador = 0;
 
-  // LOCOMOTIVE
-//     (function () {
-//         var scroll = new LocomotiveScroll();
-//     })();
+function carga() {
+    if (contador <= 1907) {
+        document.querySelector(".año").textContent = contador;
+        contador += 10;
+        setTimeout(carga, 10); 
+    } else {
+        document.querySelector(".año").textContent = "1907";
+    }
+}
 
-//     import LocomotiveScroll from 'locomotive-scroll';
-
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true
-// });
+window.onload = function () {
+    carga();
+};

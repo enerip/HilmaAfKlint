@@ -20,6 +20,10 @@ img {
     vertical-align: middle;
 }
 
+h1 {
+    font-size: 4rem !important;
+}
+
 h1,
 h2,
 h3,
@@ -78,10 +82,6 @@ body {
     z-index: 2;
 }
 
-h1 {
-    font-size: 4rem !important;
-}
-
 /* INTRO */
 
 #intro {
@@ -105,12 +105,14 @@ h1 {
     font-size: 14vh;
 }
 
+/* PAINTINGS */
 
 #paintings
 p {
     font-size: 2em;
 }
 
+/* NIÑEZ */
 
 .childhood {
     background-color: var(--clr-orange);
@@ -119,7 +121,6 @@ p {
     padding-right: 4em;
     width: 65%;
     margin-bottom: 50vh;
-
 }
 
 .mayor2 {
@@ -131,6 +132,7 @@ p {
     width: 40%;
 }
 
+/* YOUTH */
 
 .youth {
     background-color: var(--clr-beish);
@@ -161,6 +163,7 @@ p {
     }
 
 
+/* ADULTHOOD */
 
 .adulthood {
     background-color: var(--clr-beish);
@@ -171,6 +174,8 @@ p {
     margin-bottom: 4em;
 }
 
+/* OLD AGE */
+
 .old {
     background-color: var(--clr-orange);
     padding: 2em;
@@ -179,10 +184,7 @@ p {
     width: 75%;
 }
 
-
-.responsive {
-    margin-top: 5em;
-  }
+  /* NOMBRE DE LAS OBRAS */
 
   .nombreobra {
     font-family: var(--font-details);
@@ -198,7 +200,12 @@ p {
     color: var(--clr-grey);
   }
 
-/* -----FOOTER----- */
+/* CARRUSEL */
+.responsive {
+    margin-top: 5em;
+  }
+
+/* FOOTER */
 footer {
     background-color: var(--clr-black);
     color: var(--clr-beish);
@@ -264,9 +271,7 @@ footer {
     color: var(--clr-accent) !important;
 }
 
-
-
-
+/* ------------------------------------------------------------------------ */
 
   /* RESPONSIVE */
 
@@ -416,7 +421,7 @@ footer {
     .año {
         font-size: 6vh;
         padding-top: 0.2em;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.5em !important;
     }
 
     .title {
@@ -499,5 +504,19 @@ footer {
     }
     .mayor9 {
         width: 55%;
+    }
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1em !important;
+        padding-top: 1vh;
+    }
+
+    h1 {
+        font-size: 2em !important ;
+    }
+
+    .quote > p {
+        font-size: 2em;
+        width: 100%;
     }
 }
