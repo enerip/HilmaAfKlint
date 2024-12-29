@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hilma Af Klimt</title>
+    <title>Maria</title>
 
     <link rel="icon" href="---">
 
@@ -21,7 +21,10 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+    
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -29,13 +32,125 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
-<!-- FLICKITY JS -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  
+  <section id="landing">
+    
+    <!-- NAVBAR BOOTSTRAP -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #A6A698;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home/index.html">
+          <img src="assets/firma-04.webp" alt="" width="70" height="64">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3D MODEL VIEWER -->
+
+      <header>
+        <div class="header-content">
+            <model-viewer src="assets/prueba.glb" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
+    
+        </div>
+    </header>
+
+   <!-- LISTA -->
+
+    <main>
+    <ul>
+        <li class="clasificacion" >
+            <div class="titulo">
+             <p class="base"> <span class="detalle">1.</span>Los Diez Mayores</p>
+                <div class="image" style="display: inline-block;">
+                    <span>
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-03.webp" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="clasificacion" >
+            <div class="titulo">
+              <p><span class="detalle">2.</span>Caos primogenio</p>
+                <div class="image" style="display: inline-block;">
+                    <span >
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-01.webp" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="clasificacion">
+            <div class="titulo">
+                <p><span class="detalle">3.</span>Grandes Pinturas de Figuras</p>
+                <div class="image" style="display: inline-block;">
+                    <span>
+                        <img class="image img" alt="Descripción de la imagen" src="assets/obras-02.webp" style="display: block;">
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</main>
+
+   <!-- FOOTER -->
+
+<footer class="d-flex flex-column align-items-center p-5">
+  <div class="container w-100 w-xl-75">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-8 terms py-4 px-0">
+        <p class="mb-2">TÉRMINOS Y CONDICIONES</p>
+        <p class="mb-2">POLÍTICA DE PRIVACIDAD</p>
+        <p class="mb-2">LEGAL</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 nl-text p-4 d-flex flex-column position-relative">
+        <p class="mb-4">APRENDE SOBRE ESTA ARTISTA DESCONOCIDA</p>
+        <p class="mb-4">¿Quieres estar al día con todo lo relacionado a Hilma Af Klint?</p>
+        <div class="nl d-flex flex-row">
+          <input type="email" class="form-control form-nl" placeholder="Suscríbete a nuestra newsletter">
+          <i class="bi bi-envelope" style="font-size: 1.5rem; color: var(--clr-beish);"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sm" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="iconsSM">
+      <i class="bi bi-facebook" style="font-size: 1.5rem; margin: 0.2em;"></i>
+      <i class="bi bi-twitter-x" style="font-size: 1.5rem; margin: 0.2em;"></i>
+      <i class="bi bi-instagram" style="font-size: 1.5rem; margin: 0.2em;"></i>
+      <i class="bi bi-tiktok" style="font-size: 1.5rem; margin: 0.2em;"></i>
+    </div>
+    <p class="my-3">© 2024 Hilma Af Klint by María Sastre, Antonio Sánchez & Irene Pando</p>
+  </div>
+</footer>
+      
 <!-- JAVASCRIPT BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<!-- FLICKITY JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
 
 <!-- CUSTOM JS -->
 <script src="js/script.js"></script>
+</section>
 </body>
 </html>
