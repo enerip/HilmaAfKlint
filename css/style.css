@@ -25,7 +25,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+a {
     font-family: var(--font-main);
 }
 
@@ -34,7 +35,6 @@ body {
 }
 
  h2 {
-    font-family: var(--font-details) !important;
     padding-left: 5em;
     text-align: center;
 }
@@ -54,6 +54,9 @@ body {
 
 .container-fluid{
 width: 100% !important;
+}
+.container-fluid img{
+    transform: scale(0.6);
 }
 .nav-link {
     color: var(--clr-beish);
@@ -277,12 +280,7 @@ footer {
         font-size: 24px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
 
-        model-viewer {
-            width: 100vw;  
-            height: 120vh; 
-            object-fit: cover;  
-            position: absolute; 
-        }
+     
  
 }
 
@@ -309,12 +307,7 @@ footer {
         font-size: 24px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
 
-        model-viewer {
-            width: 100vw;  
-            height: 120vh; 
-            object-fit: cover;  
-            position: absolute; 
-        }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -326,25 +319,6 @@ footer {
         overflow: hidden; 
         z-index: 10;
     }
-    .header-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        font-size: 24px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
 
-        model-viewer {
-            width: 100vw;  
-            height: 120vh; 
-            object-fit: cover;  
-            position: absolute; 
-        }
 
 }
