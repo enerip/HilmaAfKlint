@@ -264,14 +264,14 @@ footer {
 /* -----MEDIA QUERIES----- */
 
 @media only screen and (max-width: 1300px) {
-    header {
+    #landing header {
         width: 100%;
         height: 100vh; 
         position: relative;
         overflow: hidden; 
         z-index: 10;
     }
-    .header-content {
+    #landing.header-content {
         position: absolute;
         top: -10vh;
         left: 0;
@@ -291,14 +291,14 @@ footer {
 
 @media only screen and (max-width: 900px) {
   
-    header {
+    #landing header {
         width: 100%;
         height: 55vh; 
         position: relative;
         overflow: hidden; 
         z-index: 10;
     }
-    .header-content {
+    #landing .header-content {
         position: absolute;
         top: -10vh;
         left: 0;
@@ -328,7 +328,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
       
-    header {
+    #landing header {
         width: 100%;
         height: 35vh; 
         position: relative;
