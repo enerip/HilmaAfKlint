@@ -64,16 +64,16 @@ body {
 
 #indexbody h2 {
     padding-left: 5em;
-    text-align: center;
+
 }
 #indexbody h1 {
     font-weight: 700;
-    text-align: center;
+   
 }
 
 
 #indexbody p {
-    text-align: center;
+
     font-size: 13px;
     color: var(--clr-beish)
 }
@@ -138,9 +138,6 @@ body {
     background-color: #ffffff;
     left: 50%;
     transform: translateX(-50%);
-}
-
-#landing .clasificacion::before {
     top: 0;
 }
 
@@ -150,7 +147,7 @@ body {
     content: '';
     position: absolute;
     width: 90vw;
-    height: 2px;
+    height: 1px !important;
     background-color: #ffffff;
     left: 50%;
     transform: translateX(-50%);
