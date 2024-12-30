@@ -57,6 +57,7 @@ p {
     background-color: var(--clr-beish);
     color: var(--clr-black);
     padding: 0.2em 1.2em;
+    padding-bottom:0.5em ;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.295) 0px 2px 8px;
     font-weight: 450;
