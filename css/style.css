@@ -107,7 +107,6 @@ body {
     height: 100vh; 
     object-fit: cover;  
     position: absolute; 
-    transform: scale(1.2);
 }
 
 
@@ -151,7 +150,7 @@ body {
     content: '';
     position: absolute;
     width: 90vw;
-    height: 0.5px;
+    height: 2px;
     background-color: #ffffff;
     left: 50%;
     transform: translateX(-50%);
@@ -208,11 +207,14 @@ body {
 @media only screen and (max-width: 1300px) {
     #landing header {
         width: 100%;
-        height: 100vh; 
+        /* height: 100vh;  */
+   
+        height: 90vh;
         position: relative;
         overflow: hidden; 
         z-index: 10;
     }
+ 
     #landing.header-content {
         position: absolute;
         top: -10vh;
@@ -226,6 +228,13 @@ body {
         text-align: center;
         font-size: 24px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
+        #landing model-viewer {
+            width: 100vw;  
+            height: 100vh; 
+            object-fit: cover;  
+            position: absolute; 
+            transform: scale(1.2);
+        }
 
      
  
@@ -235,14 +244,14 @@ body {
   
     #landing header {
         width: 100%;
-        height: 55vh; 
+        height: 55vh;  
         position: relative;
         overflow: hidden; 
         z-index: 10;
+
     }
     #landing .header-content {
         position: absolute;
-        top: -10vh;
         left: 0;
         width: 100%;
         height: 100%;
@@ -253,7 +262,13 @@ body {
         text-align: center;
         font-size: 24px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
-
+        #landing model-viewer {
+            width: 100vw;  
+            height: 100vh; 
+            object-fit: cover;  
+            position: absolute; 
+            transform: scale(1);
+        }
         #landing .titulo p {
             color: white;
             font-size: 18px;
@@ -277,10 +292,29 @@ body {
         overflow: hidden; 
         z-index: 10;
     }
+    #landing .header-content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)}
+    #landing model-viewer {
+        width: 100vw;  
+        height: 100vh; 
+        object-fit: cover;  
+        position: absolute; 
+        transform: scale(1);
+    }
 
     #landing .titulo p {
         color: white;
-        font-size: 15px;
+        font-size: 12px;
         margin: 0;
     }
     
