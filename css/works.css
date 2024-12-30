@@ -20,10 +20,6 @@ img {
     vertical-align: middle;
 }
 
-h1 {
-    font-size: 4rem !important;
-}
-
 h1,
 h2,
 h3,
@@ -53,6 +49,10 @@ body {
   z-index: 998;}
 
   /* VIDEO HEADER */
+
+  .title h1 {
+    font-size: 4rem !important;
+}
 
   .bg-video-header {
     position: relative;
@@ -386,9 +386,6 @@ footer {
         padding-top: 1vh;
     }
 
-    /* .mayor5 {
-        width: 120%;
-    } */
     .adulthood {
         padding-left: 2em;
     }

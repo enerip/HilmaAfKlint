@@ -30,48 +30,53 @@ a {
     font-family: var(--font-main);
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: var(--clr-black);
 }
 
- h2 {
+/* -----MENU----- */
+
+.container-fluid{
+    width: 100% !important;
+    }
+    .navbar .container-fluid img{
+        transform: scale(0.6);
+        padding-right: 0;
+    }
+    .navbar-brand{
+        padding-right: 0;
+        margin: 0;
+    }
+    .nav-link {
+        color: var(--clr-beish);
+      }
+      
+    .sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: 998;}
+
+/* -----LANDING----- */
+
+#indexbody h2 {
     padding-left: 5em;
     text-align: center;
 }
- h1 {
+#indexbody h1 {
     font-weight: 700;
     text-align: center;
 }
 
 
- p {
+#indexbody p {
     text-align: center;
     font-size: 13px;
     color: var(--clr-beish)
 }
-
-/* -----LANDING----- */
-/* -----MENU----- */
-
-.container-fluid{
-width: 100% !important;
-}
-.container-fluid img{
-    transform: scale(0.6);
-    padding-right: 0;
-}
-.navbar-brand{
-    padding-right: 0;
-    margin: 0;
-}
-.nav-link {
-    color: var(--clr-beish);
-  }
-  
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 998;}
 
   /* -----3DVIEWER----- */
   
@@ -197,7 +202,7 @@ width: 100% !important;
 
 
 
-
+/* 
 /* -----MEDIA QUERIES LANDING----- */
 
 @media only screen and (max-width: 1300px) {
@@ -267,7 +272,7 @@ width: 100% !important;
       
     #landing header {
         width: 100%;
-        height: 35vh; 
+        height: 45vh; 
         position: relative;
         overflow: hidden; 
         z-index: 10;
@@ -284,8 +289,7 @@ width: 100% !important;
         font-size: 20px;
         padding-right: 0.5em;
     }
-}
-
+} 
 
 
 /* -----ABOUT----- */
@@ -301,6 +305,7 @@ width: 100% !important;
     font-weight: 450;
     font-size: 20px;
     text-align: center;
+    font-family: var(--font-main);
 }
 
 .button:hover {
@@ -406,7 +411,432 @@ width: 100% !important;
     #about {
         padding-bottom: 3em;
     }
+} 
+
+/* SECCION WORKS----- */
+
+#work body {
+    background-color: var(--clr-black);
+    color: var(--clr-beish);
 }
+
+.textintro p {
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 4rem !important;
+    color: var(--clr-beish);
+}
+
+  .bg-video-header {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow-x: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: brightness(0.7);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* INTRO */
+
+#intro {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.textintro {
+    align-self: center;
+    padding-bottom: 0 !important;
+    font-size: 1.2em;
+    padding-left: 5em;
+    color: var(--clr-beish);
+}
+
+.title {
+    padding-left: 1.5em;
+}
+
+.año {
+    font-size: 14vh;
+    color: var(--clr-beish);
+}
+
+/* PAINTINGS */
+
+#paintings
+p {
+    font-size: 2em;
+}
+
+/* NIÑEZ */
+
+.childhood {
+    background-color: var(--clr-orange);
+    padding: 2em;
+    padding-left: 6em;
+    padding-right: 4em;
+    width: 65%;
+    margin-bottom: 50vh;
+}
+
+.mayor2 {
+    max-width: 50% !important;
+  }
+
+
+.mayor3 {
+    width: 40%;
+}
+
+/* YOUTH */
+
+.youth {
+    background-color: var(--clr-beish);
+    padding: 2em;
+    padding-left: 4em;
+    justify-content: center;
+    width: 65%;
+}
+
+/* QUOTE HILMA */
+
+    .quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 4em;
+        color: var(--clr-beish);
+    }
+    .quote > p {
+        font-size: 2em;
+        width: 65%;
+    }
+
+    .detalleletra {
+        font-family: "La Belle Aurore", serif;
+        font-size: 2em;
+        line-height: 0.5 !important;
+    }
+
+
+/* ADULTHOOD */
+
+.adulthood {
+    background-color: var(--clr-beish);
+    padding: 2em;
+    padding-left: 6em;
+    align-items: end;
+    width: 80%;
+    margin-bottom: 4em;
+}
+
+/* OLD AGE */
+
+.old {
+    background-color: var(--clr-orange);
+    padding: 2em;
+    padding-left: 4em;
+    justify-content: center;
+    width: 75%;
+}
+
+  /* NOMBRE DE LAS OBRAS */
+
+  .nombreobra {
+    font-family: var(--font-details);
+    font-size: 1.5em;
+    padding-top: 1vh;
+  }
+
+  .negro {
+    color: var(--clr-black) !important;
+  }
+
+  .gris {
+    color: var(--clr-grey) !important;
+  }
+
+  .blanco {
+    color: var(--clr-beish) !important;
+  }
+
+/* CARRUSEL */
+.responsive {
+    margin-top: 5em;
+  }
+
+ /* RESPONSIVE */
+
+ @media screen and (max-width: 1269px) { 
+
+    .textintro {
+        font-size: 1em;
+        padding-left: 5.7em;
+    }
+
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1.4em !important;
+        padding-top: 1vh;
+        color: var(--clr-beish);
+    }
+
+    .childhood {
+    margin-bottom: 40vh;
+}
+
+}
+
+@media screen and (max-width: 1077px) { 
+
+    .textintro {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 1022px) { 
+
+    .quote > p {
+        font-size: 1.5em !important;
+        width:70%;
+    }
+    
+    .quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 3em;
+        
+    }
+    }
+    
+
+@media screen and (max-width: 991px) { 
+
+    .textintro {
+        font-size: 0.9em;
+        padding: 4em;
+    }
+
+    .año {
+        font-size: 10vh;
+        padding-bottom: 0.5em;
+    }
+
+    .title {
+        padding-left: 1em !important;
+    }
+
+    .title {
+        font-size: 3rem !important ;
+    }
+
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        padding-left: 6em;
+        width: 75%;
+        margin-bottom: 35vh;
+    }
+ 
+    .mayor1 {
+        width: 70% ;
+    }
+
+    .youth {
+        background-color: var(--clr-beish);
+        padding: 2em;
+        padding-left: 4em;
+        justify-content: center;
+        width: 75%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        padding-left: 6em;
+        width: 75%;
+        margin-bottom: 35vh;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1.2em !important;
+        padding-top: 1vh;
+    }
+
+    .adulthood {
+        padding-left: 2em;
+    }
+
+    .childhood {
+        margin-bottom: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 719px){
+    .quote > p {
+        font-size: 1.2em !important;
+        width:85%;
+    }
+
+    .mayor4 {
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width: 680px) { 
+
+    .textintro {
+        font-size: 0.8em;
+        padding: 3em;
+    }
+
+    .año {
+        font-size: 6vh;
+        padding-top: 0.2em;
+        padding-bottom: 0.5em !important;
+    }
+
+    .title {
+        padding-left: 1em;
+    }
+
+    .title {
+        font-size: 2.5rem !important ;
+    }
+     
+    .childhood {
+        margin-bottom: 25vh;
+    }
+
+    .quote > p {
+        font-size: 1em !important;
+        width:85%;
+    }
+
+    .mayor4 {
+        width: 85%;
+    }
+
+    .mayor3 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .childhood {
+        background-color: var(--clr-orange);
+        padding: 2em;
+        width: 75%;
+        margin-bottom: 25vh;
+    }
+
+    .mayor2 {
+        max-width: 60% !important;
+      }
+    
+      .mayor1 {
+        width:75% !important;
+    }
+
+    .adulthood {
+        width: 95% !important;
+    }
+
+    .mayor5 {
+        width: 50% !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .childhood {
+        margin-bottom: 25vh;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .childhood {
+        margin-bottom: 20vh;
+    }
+
+    .mayor4 {
+        width: 95%;
+    }
+    .mayor3 {
+        width: 55%;
+    }
+
+    .youth {
+        width: 80%;
+    }
+
+    .mayor2 {
+        width:100% !important;
+    }
+
+    .mayor10 {
+        width: 95%;
+    }
+    .mayor9 {
+        width: 55%;
+    }
+    .nombreobra {
+        font-family: var(--font-details);
+        font-size: 1em !important;
+        padding-top: 1vh;
+    }
+
+    .title {
+        font-size: 2em !important ;
+    }
+
+    .quote > p {
+        font-size: 2em;
+        width: 100%;
+    }
+}
+
+
+/* ------------------------------------------------------------------------ */
 
 /* -----FOOTER----- */
 footer {
