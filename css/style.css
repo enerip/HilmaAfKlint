@@ -112,11 +112,11 @@ body {
 
 /* -----LISTA----- */
 
-#landing main{
+#landing #main{
     position: relative;
 }
 
-#landing main ul {
+#landing #main ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -142,7 +142,7 @@ body {
 }
 
 
-#landing main ul li:last-child::after {
+#landing #main ul li:last-child::after {
     bottom: 0;
     content: '';
     position: absolute;
